@@ -19,10 +19,6 @@ const Display = ({
 
     let displayValue = firstExpressionValue;
 
-    if (mathOperator && !secondExpressionValue) {
-        displayValue = firstExpressionValue;
-    }
-
     if (mathOperator && secondExpressionValue) {
         displayValue = secondExpressionValue;
     }
