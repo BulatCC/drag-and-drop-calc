@@ -8,6 +8,9 @@ const ToggleConstructorButton = () => {
 
     const handleClick = (isRuntime: boolean) => {
         dispatch(actionCreator.ChangeRuntimeStatus(isRuntime));
+        dispatch(actionCreator.SetsecondExpressionValue(''));
+        dispatch(actionCreator.SetMathOperator(''));
+        dispatch(actionCreator.SetfirstExpressionValue('0'));
     };
 
     return (
