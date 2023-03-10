@@ -1,0 +1,28 @@
+.toggle-buttons {
+    display: flex;
+    padding: 0.1rem;
+    background-color: var(--color-light-grey);
+    border-radius: 0.6rem;
+}
+
+.toggle-button_button {
+    display: flex;
+    padding: 1.2rem 0.8rem;
+    border-radius: 0.6rem;
+
+    &.active {
+        background-color: var(--color-default-white);
+        border: 0.1rem solid var(--color-grey);
+        padding: 1.1rem 0.7rem;
+
+        .toggle-buttons_img {
+            filter: var(--color-blue-filter);
+        }
+    }
+}
+
+.toggle-buttons_img {
+    margin-right: 0.8rem;
+    width: 2rem;
+    height: 2rem;
+}

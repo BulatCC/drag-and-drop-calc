@@ -1,0 +1,5 @@
+.calc-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 5.6rem;
+}

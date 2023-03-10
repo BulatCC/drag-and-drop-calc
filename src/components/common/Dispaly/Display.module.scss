@@ -1,0 +1,20 @@
+.display {
+    position: relative;
+    padding: 0.8rem;
+    min-height: 5.8rem;
+    font-size: 3.6rem;
+    background-color: var(--color-light-grey);
+    border-radius: 0.6rem;
+    font-weight: 800;
+    text-align: right;
+
+    &--small-font {
+        font-size: 1.9rem;
+    }
+}
+
+.display_number {
+    position: absolute;
+    right: 0.8rem;
+    bottom: 0.8rem;
+}

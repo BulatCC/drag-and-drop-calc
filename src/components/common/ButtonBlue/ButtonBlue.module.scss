@@ -1,0 +1,14 @@
+.ButtonBlue {
+    min-height: 6.4rem;
+    width: 100%;
+    border-radius: 0.6rem;
+    background-color: var(--color-blue);
+    color: var(--color-default-white);
+    font-weight: 500;
+    transition: var(--default-transition);
+    user-select: none;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}

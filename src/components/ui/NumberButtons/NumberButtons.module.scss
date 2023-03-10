@@ -1,0 +1,9 @@
+.number-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+}
+
+.number-buttons_wide {
+    grid-column: 1/3;
+}

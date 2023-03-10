@@ -1,0 +1,9 @@
+.wrapper {
+    padding: 0.4rem;
+    box-shadow: var(--shadow);
+    border-radius: 0.4rem;
+
+    & + .wrapper {
+        margin-top: 1.2rem;
+    }
+}

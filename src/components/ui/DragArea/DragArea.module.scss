@@ -1,0 +1,42 @@
+.drag-area {
+    min-height: 45.5rem;
+    max-width: 24rem;
+    border-radius: 0.6rem;
+    transition: var(--default-transition);
+    overflow: hidden;
+
+    &.active {
+        background-color: var(--color-light-blue);
+    }
+}
+
+.drag-area_wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 0.2rem dashed var(--color-dark-grey);
+    border-radius: 0.6rem;
+    pointer-events: none;
+}
+
+.drag-area_img {
+    margin-bottom: 2rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.drag-area_title {
+    margin-bottom: 0.4rem;
+    font-size: 1.4rem;
+    color: var(--color-blue);
+}
+
+.drag-area_text {
+    max-width: 13rem;
+    font-size: 1.2rem;
+    color: var(--color-darken-grey);
+    text-align: center;
+}
