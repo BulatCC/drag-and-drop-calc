@@ -23,9 +23,9 @@ const Constructor = (): JSX.Element => {
             secondShiftId = id;
         }
     };
-
+    
     const handleDbClick = (isRightSide: boolean, id: string) => {
-        if (runtimeStatus) {
+        if (!runtimeStatusRef.current) {
             removeRightSideComponents(isRightSide, id);
             restoreLeftSideComponents(id);
         }
@@ -41,12 +41,13 @@ const Constructor = (): JSX.Element => {
     const [leftSideCalсData, setLeftSideCalсData] = useState(calcData);
     const [rightSideCalcData, setRightSideCalcData] = useState<typeof calcData>([]);
     const [dragedId, setDragedId] = useState('');
+    const { runtimeStatus } = useSelector((state: CalcState) => state);
     const leftSideStateRef = useRef<typeof calcData>();
     const rightSideStateRef = useRef<typeof calcData>();
+    const runtimeStatusRef = useRef<boolean>();
     rightSideStateRef.current = rightSideCalcData;
     leftSideStateRef.current = leftSideCalсData;
-    const { runtimeStatus } = useSelector((state: CalcState) => state);
-    
+    runtimeStatusRef.current = runtimeStatus;
 
     useEffect(() => {
         let newStateRightSide;
