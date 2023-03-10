@@ -140,9 +140,7 @@ const Constructor = (): JSX.Element => {
     return (
         <CalcLayout>
             <div></div>
-            <div>
-                <ToggleConstructorButton />
-            </div>
+            <ToggleConstructorButton />
             <div>
                 {!runtimeStatus && renderCalc(leftSideCalсData)}
             </div>
